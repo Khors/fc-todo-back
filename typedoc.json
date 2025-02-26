@@ -1,0 +1,10 @@
+{
+  "entryPoints": [
+    "./src"
+  ],
+  "out": "docs",
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "readme": "none",
+  "includeVersion": true
+}

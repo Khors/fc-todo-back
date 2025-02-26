@@ -1,6 +1,4 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Task } from './entities/task.entity';
@@ -33,12 +31,10 @@ import { TaskService } from './tasks/task.service';
     ])
   ],
   controllers: [
-    AppController,
     UserController,
     TaskController,
   ],
   providers: [
-    AppService,
     UserService,
     TaskService,
   ],
