@@ -1,57 +1,68 @@
 # FC Todo Backend
 
-## Опис
-Цей репозиторій містить клієнтську частину застосунку **Task Management**, створену на основі **Angular**.
-Клієнт за посиланням https://github.com/Khors/fc-todo-front
+## Description
 
-## Вимоги
-- **MySQL** для бази даних.
-- **Node.js** для запуску сервера.
+This repository contains the backend part of the **Task Management** application, built using **Node.js**. The frontend is available at: [https://github.com/Khors/fc-todo-front](https://github.com/Khors/fc-todo-front)
 
-## Інструкції з встановлення
+## Requirements
 
-1. Клонувати репозиторій:
-    ```
-    git clone git@github.com:Khors/fc-todo-back.git
-    ```
-2. Перейти в папку репозиторія:
-    ```
-    cd fc-todo-back
-    ```
-3. Перейменувати `.example.env` у `.env`:
-    ```
-    mv .example.env .env
-    ```
-4. Внести свої креденшіали в `.env`.
+- **MySQL** for the database.
+- **Node.js** for running the server.
 
-5. Встановити залежності:
-    ```
-    npm install
-    ```
+## Installation Instructions
 
-## Команди для запуску
+1. Clone the repository:
 
-- Запуск у режимі розробки:
-    ```
-    npm run start:dev
-    ```
-- Запуск у production-режимі:
-    ```
-    npm run start:prod
-    ```
+   ```
+   git clone git@github.com:Khors/fc-todo-back.git
+   ```
 
-## API Ендпоінти
-- **GET /tasks** - Отримання списку всіх тасок.
-- **POST /tasks** - Створення нової таски.
-- **PATCH /tasks/:id/status** - Зміна статусу таски.
-- **POST /tasks/:taskId/assign/:userId** - Додавання користувача до таски.
-- **DELETE /tasks/:taskId/assign/:userId** - Видалення користувача з таски.
-- **DELETE /tasks/:id** - Видалення таски.
+2. Navigate to the repository folder:
 
-## Технічна інформація
-- **Node.js версія:** Переконайтеся, що у вас встановлена версія Node.js (мінімум 14.x).
-- **База даних:** MySQL.
-- **Файл конфігурації:** `.env` використовується для налаштування параметрів.
+   ```
+   cd fc-todo-back
+   ```
 
-## Автор
+3. Rename `.example.env` to `.env`:
+
+   ```
+   mv .example.env .env
+   ```
+
+4. Enter your credentials in the `.env` file.
+
+5. Install dependencies:
+
+   ```
+   npm install
+   ```
+
+## Run Commands
+
+- Start in development mode:
+  ```
+  npm run start:dev
+  ```
+- Start in production mode:
+  ```
+  npm run start:prod
+  ```
+
+## API Endpoints
+
+- **GET /tasks** - Retrieve a list of all tasks.
+- **POST /tasks** - Create a new task.
+- **PATCH /tasks/:id/status** - Change task status.
+- **POST /tasks/:taskId/assign/:userId** - Assign a user to a task.
+- **DELETE /tasks/:taskId/assign/:userId** - Remove a user from a task.
+- **DELETE /tasks/:id** - Delete a task.
+
+## Technical Information
+
+- **Node.js version:** Ensure you have Node.js installed (minimum version 14.x).
+- **Database:** MySQL.
+- **Configuration file:** `.env` is used for setting parameters.
+
+## Author
+
 Dmytro Burkovskyi
