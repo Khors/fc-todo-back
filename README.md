@@ -1,7 +1,7 @@
 # FC Todo Backend
 
 ## Опис
-Цей репозиторій містить серверну частину застосунку **Task Management**, створену на основі **Node.js** і **NestJS**.
+Цей репозиторій містить клієнтську частину застосунку **Task Management**, створену на основі **Angular**.
 Клієнт за посиланням https://github.com/Khors/fc-todo-front
 
 ## Вимоги
